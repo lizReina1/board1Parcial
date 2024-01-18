@@ -1,0 +1,29 @@
+<div class="container p-4">
+    <h1>Salas Que te Han Compartido: <br></h1>
+    <div class="row" style="margin-top: 1.6cm;">
+        {{#each salas}}
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <a href="/salas/inSala/{{tokenS}}" target="_blank">
+                        <h3 class="card-title text-uppercase">
+                            {{title}}
+                        </h3>
+                    </a>
+                    <p class="m-3">{{description}}</p>
+                    <p class="text-muted">Tiempo:
+                        {{timeago created_at}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>No hay ninguna sala para este usuario.</p>
+                <a href="/salas/add">Crea Uno!</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

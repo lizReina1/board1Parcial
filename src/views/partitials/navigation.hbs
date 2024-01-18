@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Título</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="tu-archivo-de-estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> <!-- Agregado Bootstrap CSS -->
+    <style>
+      .dropdown-menu {
+    z-index: 1000; /* Asegura que el menú desplegable esté en la capa superior */
+}
+
+        /* Estilos CSS personalizados */
+        .navbar {
+            background-color: #007BFF; /* Color de fondo del menú de navegación */
+        }
+
+        .navbar-toggler-icon {
+            color: #fff; /* Color del icono del botón desplegable */
+        }
+
+        .navbar-toggler-icon:hover {
+            background-color: transparent; /* Fondo transparente al pasar el ratón sobre el icono */
+        }
+
+        .navbar-nav {
+            margin-right: 0; /* Alineación correcta de los enlaces en la barra de navegación */
+        }
+
+        .nav-link {
+            color: #fff; /* Color del texto de los enlaces */
+            margin: 0 20px; /* Espaciado entre enlaces aumentado para mejorar la usabilidad */
+            transition: color 0.3s; /* Transición suave del color al pasar el ratón sobre los enlaces */
+        }
+
+        .nav-link:hover {
+            color: #0056b3; /* Cambio de color al pasar el ratón sobre los enlaces */
+        }
+
+        .dropdown-menu {
+            background-color: #007BFF; /* Color de fondo del menú desplegable */
+        }
+
+        .dropdown-item {
+            color: #fff; /* Color del texto del menú desplegable */
+        }
+
+        .dropdown-item:hover {
+            background-color: #0056b3; /* Cambio de color al pasar el ratón sobre los elementos del menú desplegable */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto centered-links">
+                    {{#if user}}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                            SALAS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/salas">Ver Mis Salas</a>
+                            <a class="dropdown-item" href="/salas/add">Crear Salas</a>
+                            <a class="dropdown-item" href="/salas/salasCompartidas">Salas Compartidas</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Cerrar Sesión</a>
+                    </li>
+                    {{else}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signin">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup">Registrarse</a>
+                    </li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tu contenido principal va aquí -->
+
+    <!-- JavaScript para activar el menú desplegable en dispositivos pequeños -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
