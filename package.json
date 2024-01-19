@@ -5,7 +5,7 @@
   "main": "index.js",
   "engines":{
    "node": "14.X"
-  }
+  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
