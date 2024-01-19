@@ -3,10 +3,10 @@ module.exports = {
 
     database: {
         connectionLimit: 1000,
-        host: 'localhost',//'152.70.216.169',//'localhost', //'',
+        host: '3.144.3.122',//'152.70.216.169',//'localhost', //'',
         port: '3306',
-        user: 'root',//'harold151199',//'harold',
-        password: '',//'151199',
+        user: 'useremote',//'harold151199',//'harold',
+        password: 'user$123R!',//'151199',
         database: 'sw1pizarrac4'
         // connectionLimit: 100,
         // host: 'localhost',//'152.70.216.169',//'localhost', //'',
