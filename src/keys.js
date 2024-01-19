@@ -7,7 +7,7 @@ module.exports = {
         port: '3306',
         user: 'useremote',//'harold151199',//'harold',
         password: 'user$123R!',//'151199',
-        database: 'sw1pizarrac4'
+        database: 'sw1pizarraC4'
         // connectionLimit: 100,
         // host: 'localhost',//'152.70.216.169',//'localhost', //'',
         // port: '3307',
