@@ -36,3 +36,5 @@ jobs:
             mkdir ~/backend-board
             cd home
             sudo mv * ~/backend-board
+            cd ~/backend-board
+            npm run dev
