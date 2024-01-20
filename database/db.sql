@@ -36,7 +36,7 @@ ALTER TABLE salas ADD COLUMN tokenS varchar(500);
 ALTER TABLE salas
   MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 1;
 
-CREATE TABLE userSalas ( 
+CREATE TABLE usersalas ( 
   id int(11) NOT null PRIMARY KEY AUTO_INCREMENT, 
   user_id int(11) not NULL, 
   salas_id int(11) not NULL, 
