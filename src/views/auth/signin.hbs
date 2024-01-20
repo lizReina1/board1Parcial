@@ -1,5 +1,40 @@
 <div class="water-background"></div>
-<div class="container p-4">
+ <section class="py-5">
+  <div class="container px-5">
+    <!-- Contact form-->
+    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+      <div class="text-center mb-5">
+        <div
+          class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i
+            class="bi bi-person"></i></div>
+        <h1 class="fw-bolder">Inicio Sesion</h1>
+        <p class="lead fw-normal text-muted mb-0">Introduce Tus Correctas
+          Credenciales</p>
+      </div>
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+          <form action="/signin" method="POST">
+            <div class="form-group">
+              <input type="text" name="correo" placeholder="Correo"
+                class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" placeholder="Password"
+                class="form-control">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-block">
+                SingIn
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{!-- <div class="container p-4">
   <div class="row">
     <div class="col-md-4 mx-auto">
       <div class="card text-center">
@@ -9,10 +44,12 @@
         <div class="card-body">
           <form action="/signin" method="POST">
             <div class="form-group">
-              <input type="text" name="correo" placeholder="Correo" class="form-control">
+              <input type="text" name="correo" placeholder="Correo"
+                class="form-control">
             </div>
             <div class="form-group">
-              <input type="password" name="password" placeholder="Password" class="form-control">
+              <input type="password" name="password" placeholder="Password"
+                class="form-control">
             </div>
             <div class="form-group">
               <button class="btn btn-success btn-block">
@@ -23,5 +60,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 </div>

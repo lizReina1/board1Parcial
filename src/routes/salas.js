@@ -91,7 +91,7 @@ router.get('/inSala/:tokenS', isLoggedIn, async (req, res) => {
     const inSala = '?room=' + tokenS;
     const inUs = '&username=' + tokenU;
    /*  http://localhost:8081/model-c4 */
-    const xml = 'https://board1-parcial-fronted.vercel.app/model-c4' + inSala + inUs;
+    const xml = 'http://3.144.3.122:8080/model-c4' + inSala + inUs;
     console.log(xml);
     res.redirect(xml);
 });

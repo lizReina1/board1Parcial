@@ -1,4 +1,46 @@
-<div class="container p-4">
+ <section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span
+                    class="text-gradient d-inline">Crear Sala</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+             <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body" style="background-color: #f0f8ff;">
+
+                    <form action="/salas/add" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="title" class="form-control"
+                                placeholder="Title" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="xml" class="form-control"
+                                placeholder="XML">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="description" rows="2"
+                                class="form-control"
+                                placeholder="Description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block"
+                                style="background-color: #1553e2; border: none;">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+{{!-- <div class="container p-4">
+    <h1 class="display-5 fw-bolder mb-0"><span
+            class="text-gradient d-inline">Crear Sala</span></h1>
+
     <div class="row">
         <div class="col-md-4 mx-auto">
             <div class="card">
@@ -6,17 +48,21 @@
 
                     <form action="/salas/add" method="POST">
                         <div class="form-group">
-                            <input type="text" name="title" class="form-control" placeholder="Title" autofocus>
+                            <input type="text" name="title" class="form-control"
+                                placeholder="Title" autofocus>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="xml" class="form-control" placeholder="XML">
+                            <input type="text" name="xml" class="form-control"
+                                placeholder="XML">
                         </div>
                         <div class="form-group">
-                            <textarea name="description" rows="2" class="form-control"
+                            <textarea name="description" rows="2"
+                                class="form-control"
                                 placeholder="Description"></textarea>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-success btn-block" style="background-color: #2e8b57; border: none;">
+                            <button class="btn btn-success btn-block"
+                                style="background-color: #2e8b57; border: none;">
                                 Save
                             </button>
                         </div>
@@ -25,4 +71,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
