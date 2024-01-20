@@ -30,11 +30,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo apt-get -y update
-            sudo apt install nodejs
-            sudo apt install npm
             mkdir ~/backend-board
             cd home
             sudo mv * ~/backend-board
-            cd ~/backend-board
-            npm run dev
+       
