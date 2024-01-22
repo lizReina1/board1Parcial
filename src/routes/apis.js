@@ -61,6 +61,4 @@ router.get('/cargar-salas/:tokenS', async (req, res) => {
     res.json(resultado);
 });
 
-
-
 module.exports = router;

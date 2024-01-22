@@ -90,8 +90,10 @@ router.get('/inSala/:tokenS', isLoggedIn, async (req, res) => {
     console.log(req.params + ' requ parametros');
     const inSala = '?room=' + tokenS;
     const inUs = '&username=' + tokenU;
-   /*  http://localhost:8081/model-c4 */
-    const xml = 'http://3.144.3.122:8080/model-c4' + inSala + inUs;
+   /*  http://localhost:8081/model-c4 
+   http://3.144.3.122:8080/model-c4
+   */
+    const xml = 'http://localhost:8081/model-c4' + inSala + inUs;
     console.log(xml);
     res.redirect(xml);
 });
